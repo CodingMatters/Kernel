@@ -46,7 +46,7 @@ class ApiFactoryTest extends \PHPUnit_Framework_TestCase
         $factory = new ApiFactory();
         $router = $this->prophesize(RouterInterface::class);
         $this->container->get(RouterInterface::class)->willReturn($router);
-       
+
         $this->assertTrue($factory instanceof ApiFactory);
     }
 }
