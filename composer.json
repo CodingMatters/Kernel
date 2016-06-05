@@ -1,7 +1,8 @@
 {
     "name": "codingmatters/kernel",
     "description": "Core abstraction of Objects and Functions",
-    "keywords": ["core"],
+    "type": "library",
+    "keywords": ["kernel library"],
     "homepage": "https://chronicles.codingmatters.io/kernel/",
     "license": "MIT",
     "authors": [
@@ -18,14 +19,12 @@
         "psr/http-message": "^1.0",
         "zendframework/zend-diactoros": "^1.3",
         "zendframework/zend-stratigility": "^1.2",
-        "zendframework/zend-expressive-template": "^1.0",
-        "zendframework/zend-expressive-router": "^1.2",
-        "zendframework/zend-servicemanager": "^2.7 || ^3.0"
+        "zendframework/zend-servicemanager": "^3.0",
+        "ocramius/proxy-manager": "^2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.3",
-        "squizlabs/php_codesniffer": "^2.6",    
-        "ocramius/proxy-manager": "^1.0 || ^2.0",
+        "phpunit/phpunit": "^5.4",
+        "squizlabs/php_codesniffer": "^2.6",
         "phpbench/phpbench": "^0.11",
         "filp/whoops": "^2.1"
     },
@@ -37,14 +36,6 @@
     "autoload-dev": {
         "psr-4": {
             "CodingMatters\\KernelTest\\": "test"
-        }
-    },
-    "extra": {
-        "coding-matters": {
-            "component": "CodingMatters\\Kernel"            
-        },
-        "branch-alias": {
-            "dev-develop": "1.0-dev"
         }
     },
     "scripts": {
