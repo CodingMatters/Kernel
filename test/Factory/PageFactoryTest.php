@@ -52,8 +52,9 @@ class PageFactoryTest extends \PHPUnit_Framework_TestCase
 
         $this->assertTrue($factory instanceof PageFactory);
     }
-    
-    public function testFactoryWithTemplate() {
+
+    public function testFactoryWithTemplate()
+    {
         $factory = new PageFactory();
         $this->container->has(TemplateRendererInterface::class)->willReturn(true);
         $this->container
@@ -62,5 +63,4 @@ class PageFactoryTest extends \PHPUnit_Framework_TestCase
 
         $this->assertTrue($factory instanceof PageFactory);
     }
-
 }
