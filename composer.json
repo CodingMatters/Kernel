@@ -17,9 +17,14 @@
         "roave/security-advisories": "dev-master",
         "container-interop/container-interop": "^1.1",
         "psr/http-message": "^1.0",
+        "zendframework/zend-expressive": "^1.0",
+        "zendframework/zend-expressive-router": "^1.2",
+        "zendframework/zend-router": "^3.0",
+        "zendframework/zend-mvc": "^3.0",
         "zendframework/zend-diactoros": "^1.3",
         "zendframework/zend-stratigility": "^1.2",
         "zendframework/zend-servicemanager": "^3.0",
+        "zendframework/zend-psr7bridge": "^0.2.0",
         "ocramius/proxy-manager": "^2.0"
     },
     "require-dev": {
@@ -38,6 +43,12 @@
             "CodingMatters\\KernelTest\\": "test"
         }
     },
+    "extra": {
+        "zf": {
+            "component": "CodingMatters\\Kernel",
+            "config-profider": "CodingMatters\\Kernel\\ConfigProvider"
+        }
+    },
     "scripts": {
         "post-install-cmd"  : [
             "@check"
@@ -50,7 +61,7 @@
             "@test"
         ],
         "cs": "phpcs",
-        "cs-fix": "phpcbf",
+        "cs-fix": "phpcbf src",
         "test": "phpunit",
         "test-coverage": "phpunit --coverage-clover clover.xml"
     },
