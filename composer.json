@@ -24,8 +24,7 @@
         "zendframework/zend-diactoros": "^1.3",
         "zendframework/zend-stratigility": "^1.2",
         "zendframework/zend-servicemanager": "^3.0",
-        "zendframework/zend-psr7bridge": "^0.2.0",
-        "ocramius/proxy-manager": "^2.0"
+        "zendframework/zend-psr7bridge": "^0.2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.4",
